@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Mania</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body style="background-image: url(assets/img/pizzaFundo.jpg);">
+    <div id="fundo">
+        <header style="background-image: url(assets/img/fundoHeader.jpg);">
+            <ul>
+                <li>
+                    <h1>Pizza Mania</h1>
+                </li>
+                <li>
+                    <h2>Vendas de Pizzas</h2>
+                </li>
+            </ul>
+        </header>
+
+        <section>
+            <form>
+                <h1>Selecione o sabor da pizza que foi vendida</h1>
+                <ul>
+                    <li><input type="radio" id="mussarela" name="pizzas"><label for="mussarela"> mussarela</label></li>
+                    <li><input type="radio" id="mista" name="pizzas"><label for="mista">mista</label></li>
+                    <li><input type="radio" id="calabresa" name="pizzas"><label for="calabresa"> calabresa</label></li>
+                </ul>
+            </form>
+        </section>
+
+        <section>
+            <button id="vendas">Vendas</button>
+            <button id="estorno">Estorno</button>
+        </section>
+
+        <section>
+            <table id="table">
+                <tr>
+                    <th>Sabores</th><th>Quantidades</th><th>Valores</th>
+                </tr>
+                <tr>
+                    <td>Mussarela</td><td id="qMussarela"></td><td id="valoresMussarela"></td>
+                </tr>
+                <tr>
+                    <td>Mista</td><td id="qMista"></td><td id="valoresMista"></td>
+                </tr>
+                <tr>
+                    <td>Calabresa</td><td id="qCalabresa"></td><td id="valoresCalabresa"></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <button id="export">Abrir planilha</button>
+        </section>
+</div>
+
+    <script src="assets/js/tableToExcel.js"></script>
+    <script src="assets/js/javaScript.js"></script>
+</body>
+
+</html>
